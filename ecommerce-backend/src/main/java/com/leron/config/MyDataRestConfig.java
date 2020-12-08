@@ -10,7 +10,7 @@ import org.springframework.http.HttpMethod;
 
 @Configuration
 public class MyDataRestConfig implements RepositoryRestConfigurer {
-    @Override
+/*    @Override
     public void configureRepositoryRestConfiguration(RepositoryRestConfiguration config) {
         HttpMethod[]  theUnsupportedActions = { HttpMethod.PUT, HttpMethod.POST, HttpMethod.DELETE };
 
@@ -25,5 +25,5 @@ public class MyDataRestConfig implements RepositoryRestConfigurer {
                 .forDomainType(ProductCategory.class)
                 .withItemExposure((metdata, httpMethods) -> httpMethods.disable(theUnsupportedActions))
                 .withCollectionExposure((metdata, httpMethods) -> httpMethods.disable(theUnsupportedActions));
-    }
+    }*/
 }
